@@ -1,6 +1,6 @@
 import "../styles/globals.css"
-import Banner from "../../fastito/components/Banner"
-import Header from "../../fastito/components/Header"
+import Banner from "../../fasterin/components/Banner"
+import Header from "../../fasterin/components/Header"
 
 export default function RootLayout({
   children,
