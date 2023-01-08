@@ -1,6 +1,9 @@
 import {groq} from "next-sanity";
 import {client} from "../lib/sanity.client";
 import category from "../schemas/category";
+import urlFor from "../lib/urlFor";
+import {PortableText} from "@portabletext/react";
+import {RichTextComponents} from "RichTextContent"
 
 type Props = {
     params: {
@@ -68,6 +71,8 @@ return <article className="px-10 pb-28">
             </section>
         </div>
     </section>
+
+    <PortableText value={post.body} components={RichTextComponents}/>
 </article>;
 }
 
