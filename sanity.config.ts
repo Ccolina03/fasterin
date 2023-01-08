@@ -3,6 +3,7 @@ import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
 import { myTheme } from './theme'
+import { getDefaultDocumentNode } from './structure'
 
 export default defineConfig({
   basePath: '/studio', 
@@ -10,7 +11,8 @@ export default defineConfig({
   title: 'PAPAFAM Content Studio',
   projectId: 'zp317s8w', //to change later env var
   dataset: 'production', //to change later
-  plugins: [deskTool(), visionTool()],  //desktool permits to update info
+  //preview data.
+  plugins: [deskTool({defaultDocumentNode: getDefaultDocumentNode,}), visionTool()],  //desktool permits to update info
   schema: {
     types: schemaTypes,
   },

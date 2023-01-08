@@ -1560,7 +1560,12 @@
     "split2" "^4.1.0"
     "throttle-debounce" "^5.0.0"
 
-"@sanity/icons@^2", "@sanity/icons@^2.1.0", "@sanity/icons@^2.2.2":
+"@sanity/icons@^1.3":
+  "integrity" "sha512-5wVG/vIiGuGrSmq+Bl3PY7XDgQrGv0fyHdJI64FSulnr2wH3NMqZ6C59UFxnrZ93sr7kOt0zQFoNv2lkPBi0Cg=="
+  "resolved" "https://registry.npmjs.org/@sanity/icons/-/icons-1.3.10.tgz"
+  "version" "1.3.10"
+
+"@sanity/icons@^2", "@sanity/icons@^2.0.0", "@sanity/icons@^2.1.0", "@sanity/icons@^2.2.2":
   "integrity" "sha512-+Ks6LeYe44kjZSfcWFWj0zQRP48N3JisrZ9ia44QwG11y6bO9Wk8bfhu5o23FkyYrREu9CzQ0U+slSV7YsvcuQ=="
   "resolved" "https://registry.npmjs.org/@sanity/icons/-/icons-2.2.2.tgz"
   "version" "2.2.2"
@@ -1593,6 +1598,14 @@
     "rimraf" "^3.0.2"
     "split2" "^3.2.2"
     "tar-fs" "^2.1.1"
+
+"@sanity/incompatible-plugin@^1.0.4":
+  "integrity" "sha512-2z39G9PTM8MXOF4fJNx3TG4tH0RrTjtH6dVLW93DSjCPbIS7FgCY5yWjZfQ+HVkwhLsF7ATDAGLA/jp65pFjAg=="
+  "resolved" "https://registry.npmjs.org/@sanity/incompatible-plugin/-/incompatible-plugin-1.0.4.tgz"
+  "version" "1.0.4"
+  dependencies:
+    "@sanity/icons" "^1.3"
+    "react-copy-to-clipboard" "^5.1.0"
 
 "@sanity/logos@^2.0.2":
   "integrity" "sha512-nxJUQQzEEG8EqjiOEswQQpBUuFc3iSxTVF9D9Memg/tlOChX76dStNHoa1RWuvSPu895aqJV+9zxijAa0kF9Vg=="
@@ -5280,7 +5293,7 @@
   dependencies:
     "@babel/runtime" "^7.12.13"
 
-"react-copy-to-clipboard@^5.0.4":
+"react-copy-to-clipboard@^5.0.4", "react-copy-to-clipboard@^5.1.0":
   "integrity" "sha512-k61RsNgAayIJNoy9yDsYzDe/yAZAzEbEgcz3DZMhF686LEyukcE1hzurxe85JandPUG+yTfGVFzuEw3xt8WP/A=="
   "resolved" "https://registry.npmjs.org/react-copy-to-clipboard/-/react-copy-to-clipboard-5.1.0.tgz"
   "version" "5.1.0"
@@ -5288,7 +5301,7 @@
     "copy-to-clipboard" "^3.3.1"
     "prop-types" "^15.8.1"
 
-"react-dom@^18", "react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>= 16.8.0", "react-dom@>=16.8 || ^17.0.0 || ^18.0.0", "react-dom@>=16.8.0", "react-dom@18.2.0":
+"react-dom@^16.8.0  || ^17.0.0 || ^18.0.0", "react-dom@^16.9 || ^17 || ^18", "react-dom@^18", "react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>= 16.8.0", "react-dom@>=16.8 || ^17.0.0 || ^18.0.0", "react-dom@>=16.8.0", "react-dom@18.2.0":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   "version" "18.2.0"
@@ -5368,7 +5381,7 @@
   dependencies:
     "prop-types" "^15.5.4"
 
-"react@^15 || ^16 || ^17 || ^18", "react@^15.3.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^15.3.0 || 16 || 17 || 18", "react@^16.8 || ^17 || ^18", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.9 || ^17 || ^18", "react@^17 || ^18", "react@^18", "react@^18.0.0", "react@^18.2.0", "react@>= 16.8.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=15.0.0", "react@>=16", "react@>=16.8 || ^17.0.0 || ^18.0.0", "react@>=16.8.0", "react@>=17.0", "react@>=17.0.0", "react@18.2.0":
+"react@^15 || ^16 || ^17 || ^18", "react@^15.3.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^15.3.0 || 16 || 17 || 18", "react@^16.8 || ^17 || ^18", "react@^16.8.0  || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.9 || ^17 || ^18", "react@^17 || ^18", "react@^18", "react@^18.0.0", "react@^18.2.0", "react@>= 16.8.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=15.0.0", "react@>=16", "react@>=16.8 || ^17.0.0 || ^18.0.0", "react@>=16.8.0", "react@>=17.0", "react@>=17.0.0", "react@18.2.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
@@ -5672,6 +5685,16 @@
   "version" "1.0.9"
   dependencies:
     "diff-match-patch" "^1.0.5"
+
+"sanity-plugin-iframe-pane@^2.1.1":
+  "integrity" "sha512-uyZUxcWApnDMrBu4jfX3xshs5Yy3eTOI4iNUV6i7v1Zt2vxlF78fp6q+VNvNlzexM5znWT24kEAQdaF4swGutw=="
+  "resolved" "https://registry.npmjs.org/sanity-plugin-iframe-pane/-/sanity-plugin-iframe-pane-2.1.1.tgz"
+  "version" "2.1.1"
+  dependencies:
+    "@sanity/icons" "^2.0.0"
+    "@sanity/incompatible-plugin" "^1.0.4"
+    "@sanity/ui" "^1.0.0"
+    "usehooks-ts" "^2.6.0"
 
 "sanity@^3", "sanity@^3.0.0":
   "integrity" "sha512-C19eoBfhdv8ha2ZbGJ0GqESIoP5RN5GXy0f6bl1zMwsg/epIObEZQD1dxU47iZnoRCeXhp/tJPlynTywQoaidQ=="
@@ -6442,6 +6465,11 @@
   "integrity" "sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA=="
   "resolved" "https://registry.npmjs.org/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz"
   "version" "1.2.0"
+
+"usehooks-ts@^2.6.0":
+  "integrity" "sha512-2FAuSIGHlY+apM9FVlj8/oNhd+1y+Uwv5QNkMQz1oSfdHk4PXo1qoCw9I5M7j0vpH8CSWFJwXbVPeYDjLCx9PA=="
+  "resolved" "https://registry.npmjs.org/usehooks-ts/-/usehooks-ts-2.9.1.tgz"
+  "version" "2.9.1"
 
 "util-deprecate@^1.0.1", "util-deprecate@^1.0.2", "util-deprecate@~1.0.1":
   "integrity" "sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw=="
