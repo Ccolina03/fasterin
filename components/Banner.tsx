@@ -8,11 +8,11 @@ function Banner() {
                 <span className="underline decoration-4 decoration-[#F7AB0A]">
                     Every Developers 
                 </span> {" "}
-                favourite blog in the Devosphere
+                favourite blog
             </h2>  
         </div>
         <p className="mt-5 md:mt-2 text-gray-400 max-w-sm">
-            Computer Science is the worst | University of Alberta | The weekly debugging nightmares & More!
+            Computer Engineering | University of Alberta | The weekly debugging nightmares & More!
         </p>
     </div>
   )
