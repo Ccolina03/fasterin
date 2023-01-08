@@ -1,4 +1,4 @@
-import Header from "../../fastito/components/Header";
+import Header from "../../fasterin/components/Header";
 
 export default function HomePage() {
     return (
