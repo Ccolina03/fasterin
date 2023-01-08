@@ -34,7 +34,7 @@ interface Image {
 
 interface Slug {
     _type: 'slug';
-    _current: string
+    current: string
 }
 
 interface Reference {

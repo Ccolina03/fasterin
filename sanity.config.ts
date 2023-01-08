@@ -2,8 +2,9 @@ import {defineConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
-import { myTheme } from './theme'
 import { getDefaultDocumentNode } from './structure'
+
+
 
 export default defineConfig({
   basePath: '/studio', 
