@@ -2,32 +2,34 @@ import {previewData} from 'next/headers'
 import {groq} from "next-sanity"
 import {client} from "../../lib/sanity.client"
 import { PreviewSuspense } from 'next-sanity/preview'
+import PreviewBlogList from '../../components/PreviewBlogList'
+import BlogList from '../../components/BlogList'
+
 
 const query = groq `
-*[_type=='post']{ //get me all the types of post
-    ..., //getting all fills and references(author, categories)
-    author->,categories[]->} | order(_createdAt desc)`  //ordering by creator
+*[_type=='post']{ 
+    ...,
+    author->,categories[]->} | order(_createdAt desc)`  
 
 
 //Two scenarios: preview mode or not
 export default async function HomePage() {
         if (previewData()) {
-            return (<PreviewSuspense 
-                fallback={(
+            return (<PreviewSuspense fallback={(
                 <div role="status">
                     <p className="text-center text-lg animate-pulse text-[#F7AB0A]"> 
                     Loading Preview Data...
-                    </p> </div>
-            )}></PreviewSuspense>)
+                    </p>
+                     </div>
+            )}>
+            <PreviewBlogList query={query}/> 
+            </PreviewSuspense>)
         }
 
 
         const posts= await client.fetch(query)
+        console.log(posts)
         return (
-        <div>
-            <h1>
-                Not in preview mode
-            </h1>
-        </div>
+            <BlogList posts={posts}/>
     );
 }
