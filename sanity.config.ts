@@ -6,6 +6,8 @@ import { getDefaultDocumentNode } from './structure'
 
 
 
+
+
 export default defineConfig({
   basePath: '/studio', 
   name: 'PAPAFAM_CONTENT_STUDIO',
