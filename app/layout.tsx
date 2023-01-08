@@ -1,4 +1,6 @@
 import "../styles/globals.css"
+import Banner from "../../fastito/components/Banner"
+import Header from "../../fastito/components/Header"
 
 export default function RootLayout({
   children,
@@ -7,8 +9,10 @@ export default function RootLayout({
 }) {
   return (
     <html>
+
       <head />
-      <body>{children}</body>
+      <body> <Header/>
+      <Banner/>{children}</body>
     </html>
   )
 }
