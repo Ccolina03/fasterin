@@ -20,12 +20,13 @@ async function Post({params: {slug}}:Props) {
 const post: Post = await client.fetch(query,{slug});
 return <article>
     <section>
-        <div>
-            <div>
+        <div className="relative min-h-56 flex flex-col md:flex-row justify-between">
+            <div className="absolute top-0 w-full h-full opacity-full">
                 <Image
                     className="object-cover object-center mx-auto"
                     src ={urlFor(post.mainImage).url()}
                     alt={post.author.name}
+                    fill
                 />
             </div>
         </div>
