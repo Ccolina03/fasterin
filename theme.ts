@@ -1,8 +1,11 @@
-import build from "next/dist/build";
+
 import { buildLegacyTheme } from "sanity";
 //theme background
 //customizing color general attributes
+//using props to predefine values
 
+
+//css variables
 const props = {
     "--my-white": "#fff",
     "--my-black": "#1a1a1a",
@@ -14,6 +17,8 @@ const props = {
 };
 
 export const myTheme = buildLegacyTheme({
+
+    //base theme colors
     "--black": props["--my-black"],
     "--white": props["--my-white"],
 
@@ -31,8 +36,8 @@ export const myTheme = buildLegacyTheme({
     "--default-button-color": "#666",
     "--default-button-primary-color": props["--my-papafam-brand"],
     "--default-button-success-color": props["--my-green"],
-    "--default-button-warning-color": props["--my-green"],
-    "--default-button-danger-color": props["--my-yellow"],
+    "--default-button-warning-color": props["--my-yellow"],
+    "--default-button-danger-color": props["--my-red"],
 
 //Navbar
 "--main-navigation-color": props["--my-black"],
