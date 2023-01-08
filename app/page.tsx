@@ -1,9 +1,36 @@
-import Header from "../../fasterin/components/Header";
+import {groq} from "next-sanity";
+import {client} from "../lib/sanity.client";
 
-export default function HomePage() {
-    return (
+type Props = {
+    params: {
+        slug:string;
+    };
+};
+
+async function Post({params: {slug}}:Props) {
+    const query = groq`
+    *[_type=='post'&&slug.current==$slug][0]
+    {
+        ...,
+        author->,
+        categories[]->
+    }
+`;
+
+const post: Post = await client.fetch(query,{slug});
+return <article>
+    <section>
         <div>
-            
+            <div>
+                <Image
+                    className="object-cover object-center mx-auto"
+                    src ={urlFor(post.mainImage).url()}
+                    alt={post.author.name}
+                />
+            </div>
         </div>
-    );
+    </section>
+</article>;
 }
+
+export default Post;
