@@ -3,7 +3,7 @@ import {client} from "../lib/sanity.client";
 import category from "../schemas/category";
 import urlFor from "../lib/urlFor";
 import {PortableText} from "@portabletext/react";
-import {RichTextComponents} from "RichTextContent"
+import {RichTextComponents} from "../components/RichTextContent"
 
 type Props = {
     params: {
