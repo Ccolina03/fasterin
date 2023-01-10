@@ -6,7 +6,7 @@ type Props = {
 };
 
 function BlogList({posts}: Props) {
-    console.log(posts)
+    //console.log(posts)
    return (
          <div>
             <hr className= "border-[#F7AB0A] mb-10" />

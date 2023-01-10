@@ -21,8 +21,8 @@ async function Post({params: {slug}}: Props) {
 `;
 
 const post: Post = await client.fetch(query,{ slug:slug });
-console.log("1")
-console.log(post)
+//Veryfying: console.log("1")
+//console.log(post)
 //second argument is a parameter
 
 return <article className="px-10 pb-28">

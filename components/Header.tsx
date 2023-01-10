@@ -8,7 +8,7 @@ function Header(){
             <Link href='/'>
                 <Image 
                 className="rounded-full"
-                src={"https://links.papareact.com/1m8"}
+                src={"https://avatars.githubusercontent.com/u/5705588?s=200&v=4"}
                 width={50}
                 height={50}
                 alt="Home"/>
