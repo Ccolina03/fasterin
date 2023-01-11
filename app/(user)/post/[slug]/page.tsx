@@ -4,6 +4,7 @@ import urlFor from "../../../../lib/urlFor";
 import {PortableText} from "@portabletext/react";
 import { RichTextComponents } from "../../../../components/RichTextComponents";
 import Image from "next/image";
+
 type Props = {
     params: {
         slug: string;
