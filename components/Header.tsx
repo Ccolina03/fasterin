@@ -8,7 +8,7 @@ function Header(){
             <Link href='/'>
                 <Image 
                 className="rounded-full"
-                src={"https://avatars.githubusercontent.com/u/5705588?s=200&v=4"}
+                src={"https://cdn.pixabay.com/photo/2022/12/12/17/05/elephants-7651446_960_720.jpg"}
                 width={50}
                 height={50}
                 alt="Home"/>

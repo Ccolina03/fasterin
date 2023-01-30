@@ -10,7 +10,7 @@ export default function CustomStudioHead() {
       <NextStudioHead favicons={false} />
       <link
         rel="icon"
-        type="image/png"
+        type=""
         sizes="32x32"
         href="https://www.sanity.io/static/images/favicons/favicon-32x32.png"
       />
